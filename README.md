@@ -114,8 +114,6 @@ be printed more than once and the last one printed should be taken into account.
 
 ### De-multiplexer With 2 output wires
 
-![Image](images/Demux2.png?raw=true "Demux 2")
-
 Consider both Wire control and input were set to false and thus setting all the other components
 states and wires to their correct current. The Wire input was set to true by the outside. This will
 trigger two StateChange to two different And actors. The first And actor on the right of the
@@ -123,6 +121,8 @@ above diagram will receive a StateChange and evaluates to true because as it was
 components states were set to their correct current. Thus Wire output0 will receive true as a
 message. On the other hand, the second And actor will also receive a StateChange. The And
 actor will re-evaluate the output and send false to the Wire output1.
+
+![Image](images/Demux2.png?raw=true "Demux 2")
 
 ### De-multiplexer
 
